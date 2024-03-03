@@ -1,0 +1,16 @@
+{
+  "name": "qr-npm",
+  "version": "1.0.0",
+  "description": "i am solidifying",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "deba",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "qr-image": "^3.2.0"
+  }
+}
