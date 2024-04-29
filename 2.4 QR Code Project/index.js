@@ -18,7 +18,7 @@ const questions = [
 
 inquirer.prompt(questions).then((answers) => {
   console.log(JSON.stringify(answers, null, '')); 
-  qr.image(JSON.stringify(answers,null,''),{type : 'png'}).pipe(fs.createWriteStream('qr_image.png'));
+  qr.image((answers.URL,null,''),{type : 'png'}).pipe(fs.createWriteStream('qr_image.png'));
 });
 
 
