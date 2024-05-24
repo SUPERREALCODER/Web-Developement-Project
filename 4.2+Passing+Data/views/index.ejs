@@ -8,9 +8,16 @@
 </head>
 
 <body>
+
   <% if(locals.data) {%>
-  <%= data["fName"] %>
-  <% } %>
+    <h1> There are 
+  <%= data["fName"].length + data["lName"].length %>
+  letters in your name 
+    </h1>
+ 
+  <% } else {%>
+    <h1>Enter your name human</h1>
+  <% }%>
   <form action="/submit" method="POST">
     <input type="text" name="fName" placeholder="First name">
     <input type="text" name="lName" placeholder="Last name">
