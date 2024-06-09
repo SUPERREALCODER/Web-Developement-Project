@@ -2,7 +2,11 @@
 
 <footer>
   <!-- Step 4 - Add a dynamic year to the footer using JS. -->
-  <p>Copyright © 200X</p>
+  <p>Copyright © 
+    <% const d = new Date();%>
+    <% let year = d.getFullYear(); %>
+    <%= year %>
+  </p>
 </footer>
 </body>
 

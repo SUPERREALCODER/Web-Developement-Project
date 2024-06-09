@@ -1,6 +1,14 @@
-<!-- Step 3 Add Header -->
+<%- include("partials/header.ejs") %>
 
+<% if(locals.day){ %>
+  <h1>
+    <%= day %>
 
+  </h1>
+  <% } else {  %>
+   
+    <h1>Welcome to the Band Generator 🤟</h1>
+  <% } %>
 <!-- Step 2 - If an adjective and noun are sent to this ejs file, 
     Change the h1 to show the adjective and noun.
     But when the user first goes on the website and there is no adjective and noun, 
@@ -9,4 +17,4 @@
 <form action="/submit" method="POST">
   <input type="submit" value="Generate Name">
 </form>
-<!-- Step 3 Add Footer -->
+<%- include("partials/footer.ejs") %>
