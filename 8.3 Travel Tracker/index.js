@@ -40,7 +40,8 @@ add=add.substring(0,1).toUpperCase()+add.substring(1,add.length).toLowerCase();
 console.log(add);
 const search = await db.query("SELECT country_code FROM countries WHERE country_name =$1",[add]);
 if (search.rows.length !== 0){db.query("INSERT INTO visited_countries (country_code) VALUES ($1)",[search.rows[0].country_code]);
-res.redirect("/");}
+  };
+  res.redirect("/");
 
 
 
